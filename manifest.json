@@ -1,0 +1,14 @@
+{
+  "name": "Paste Enabler",
+  "description": "Enables paste function on input fields using the context menu",
+  "version": "0.3",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["enablePasteContextMenu.js"]
+  },
+   "content_scripts": [{
+      "js": ["clickListener.js"],
+      "matches": [ "\u003Call_urls\u003E" ]
+   }],
+  "manifest_version": 2
+}

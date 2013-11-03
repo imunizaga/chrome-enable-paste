@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>chrome paste enabler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  </head>
+
+  <body>
+    <input onpaste="return false;" type="text" id="firstInput"/>
+    <input onpaste="return false;" type="checkbox" id="secondInput"/>
+    <input onpaste="return false;" type="password" id="thirdInput"/>
+    <input onpaste="return false;" type="radio" id="fourthInput"/>
+    <textarea onpaste="return false;" id="firstTextarea">
+    </textarea>
+
+
+    <frameset  rows='50,*' frameborder='0' border='0' framespacing='0'>
+      <frame name='arriba' src='arriba.asp' marginwidth=0 marginheight=0 scrolling=no frameborder=no noresize>
+      <frameset  cols='221,*' frameborder=no border=0 framespacing=0>
+        <frame name='izquierdo' src='opciones.asp' marginwidth=0 marginheight=0 scrolling=auto frameborder=no noresize>
+        <frame name='derecho' src='bienve.htm' marginwidth=0 marginheight=0 scrolling=auto frameborder=no noresize>
+      </frameset>
+    </frameset>
+  </body>
+</html>
